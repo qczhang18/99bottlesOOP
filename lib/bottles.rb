@@ -1,6 +1,14 @@
 class Bottles
   def verse (x)
-    "99 bottles of beer on the wall, 99 bottles of beer.
-    Take one down and pass it around, 98 bottles of beer on the wall."
+    "#{startverse(x)}#{second(x)}"
   end
+
+  def startverse (x)
+    "#{x} bottles of beer on the wall, #{x} bottles of beer.\n"
+  end
+
+  def second(x)
+    "Take one down and pass it around, #{x-1} bottles of beer on the wall.\n"
+  end
+
 end
